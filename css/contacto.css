@@ -65,3 +65,31 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+
+.countdown {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: whitesmoke;
+    background: #282327;
+    width: 13rem;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    transition: box-shadow .5s ease-in-out;
+  }
+
+  .countdown:hover{
+    box-shadow: 0px 0px 40px #ef99f7 radial-gradient(circle, #f054ce, #710070);
+    cursor: pointer;
+    background: var(--celeste);
+    color: #710070;
+  }
+  
+  .countdown span {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 3px;
+    background: #000;
+    color: #FFF;
+  }
