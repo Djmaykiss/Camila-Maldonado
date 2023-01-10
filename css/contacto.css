@@ -1,0 +1,67 @@
+.contactos{
+    display: block;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.contactos .ubicacion h3{
+    font-size: 2.5rem;
+    color: var(--rosado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contactos .ubicados{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: 100%;
+}
+
+.contactos .ubicacion .fa-location-dot{
+    color: blue;
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: .5rem;
+}
+
+.contactos .ubicacion p{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.contactos .consulta{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 2rem;
+    color: cornflowerblue;
+    padding: 1rem;
+}
+
+.contactos .mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactos .ubicados{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

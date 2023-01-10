@@ -11,7 +11,7 @@
 }
 
 *{
-    font-family: 'Kumbh Sans', sans-serif;
+font-family: 'Kumbh Sans', sans-serif;
 font-family: 'Noto Sans', sans-serif;
 font-family: 'Pacifico', cursive;
 font-family: 'Poppins', sans-serif;
@@ -225,7 +225,7 @@ header label{
 }
 
 .acerca_de{
-    background: url(/imagenes/002.png) no-repeat;
+   /* background: url(/imagenes/002.png) no-repeat;*/
     background: cover;
     background-position: left;
     padding-bottom: 3rem;
@@ -388,6 +388,209 @@ padding: 1rem 0;
     padding: 1rem;
 }
 
+.precio .caja-contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.precio .caja-contenedor .caja{
+    flex: 1 1 22rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: whitesmoke;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.precio .caja-contenedor .caja:nth-child(2),
+.precio .caja-contenedor .caja:hover{
+    border: .2rem solid var(--celeste);
+}
+
+.precio .caja-contenedor .caja .titulo{
+    color: #343a40;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.precio .caja-contenedor .caja .tipos{
+    font-size: 4rem;
+    color: #7EBCE7;
+    padding: 1rem 0;
+}
+
+.precio .caja-contenedor .caja .tipos span{
+    font-size: 2rem;
+}
+
+.precio .caja-contenedor .caja ul{
+    padding: 1rem 0;
+    list-style: none;
+}
+
+.precio .caja-contenedor .caja ul li{
+    font-size: 2rem;
+    color: #343a40;
+    padding: .5rem 0;
+
+}
+
+.precio .caja-contenedor .caja ul li .fa-check{
+    color: black;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 4rem;
+}
+
+.formulario .image{
+    flex: 1 1 40rem;
+}
+
+.formulario .image img{
+    width: 90%;
+    padding: 2rem;
+}
+
+.formulario form{
+    flex: 1 1 40rem;
+    padding: 2rem 3rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5 1rem rgba(0,0,0,.1);
+    border-radius: 5rem;
+    background: whitesmoke;
+}
+
+.formulario .heading{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.formulario form .inputcaja{
+    position: relative;
+}
+
+.formulario form .inputcaja input, .contactos form .inputcaja textarea{
+    width: 100%;
+    background: none;
+    color: #333;
+    margin: 1.5rem 0;
+    padding: .5rem 0;
+    font-size: 1.7rem;
+    border-bottom: .1rem solid rgba(0,0,0,.1);
+    text-transform: none;
+}
+
+.formulario form .inputcaja textarea{
+    resize: none;
+    height: 100%;
+    width: 100%;
+}
+
+.formulario form .inputcaja label{
+    position: absolute;
+    top: 1.7rem;
+    left: 0;
+    font-size: 1.7rem;
+    color: #666;
+    transition: .2s linear;
+}
+
+.formulario form .inputcaja input:focus ~ label,
+.formulario form .inputcaja input:valid ~ label,
+.formulario form .inputcaja textarea:focus ~ label,
+.formulario form .inputcaja textarea:valid ~ label{
+    top: -.5rem;
+    font-size: 1.5rem;
+    color: var(--rosado);
+}
+
+.footer{
+    padding-top: 2rem;
+    background: url(/imagenes/footer.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer .caja-contenedor{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .caja-contenedor .caja{
+    flex: 1 1 15rem;
+    margin: 1.5rem;
+}
+
+.footer .caja-contenedor .caja h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: rgb(68, 14, 14);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.footer .caja-contenedor .caja p{
+    font-size: 2rem;
+    padding: .5rem 0;
+    color: #000c8f;
+}
+
+.footer .caja-contenedor .caja a{
+    display: block;
+    font-size: 1.5rem;
+    padding: 5rem 0;
+    color: rgb(68, 14, 14);
+    
+}
+
+.footer .caja-contenedor .caja a:hover{
+    text-decoration: underline;
+}
+
+
+.footer .caja-contenedor .caja .info{
+    display: flex;
+    align-items: center;
+
+}
+
+.footer .caja-contenedor .caja .info i{
+    margin: 5rem 0;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background: wheat;
+    color: #000c8f;
+    font-size: 1.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+}
+
+.footer .Creditos{
+    font-size: 2rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color: rgb(47, 44, 39);
+    border-top: .1rem solid wheat;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+
+
 
 
 /*! Responsive */
@@ -441,6 +644,7 @@ padding: 1rem 0;
         opacity: 1;
     }
 
+
     header input:checked ~ label::before{
         content: "\f00d";
     }
@@ -477,6 +681,11 @@ padding: 1rem 0;
         font-size: 49%;
     }
 
+    .acerca_de .content h3{
+        color: var(--celeste);
+        background: none;
+    }
+
         .acerca_de .columna .content .bottons a{
             width: 100%;
             text-align: center;
@@ -494,6 +703,12 @@ padding: 1rem 0;
         section h2 span{
             color: var(--rosado);
             font-size: 4rem;
+        }
+
+        .contactos .ubicados{
+            display: contents;
+            justify-content: center;
+            align-items: center;
         }
         
 
