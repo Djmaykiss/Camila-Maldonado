@@ -145,7 +145,7 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/imagenes/001.png) no-repeat;
+    background: url(./imagenes/001.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
