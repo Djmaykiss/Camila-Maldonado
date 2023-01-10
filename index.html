@@ -98,6 +98,54 @@
     </div>
 <div class="content">
     <h3>01 DE JULIO DEL 2023</h3>
+    
+     <div class="countdown">
+        <span>2023</span>
+        <span>07</span>
+        <span>01</span>
+      </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jul 1, 2023 00:00:00").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+        
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+        
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+          // Output the result in an element with id="demo"
+          document.getElementsByClassName("countdown")[0].innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+        
+          // If the count down is over, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est illo veritatis mollitia, cum commodi itaque quod numquam, esse consequatur repellendus iste enim ipsam molestias deleniti voluptas quasi quae sed?</p>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, facilis libero. Ab laborum sunt hic officia unde, facere fuga. Numquam incidunt autem tenetur nobis quasi eaque, quo odio tempora itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex est assumenda vel consequuntur dicta cumque molestiae quisquam ratione, nemo sunt, porro autem cum alias laborum ipsa facere modi expedita!</p>
+    
+    <div class="bottons">
+        <a href="#" class="btn"><i class="fa-brands fa-facebook"></i> Mi Facebook</a>
+        <a href="#" class="btn"><i class="fa-brands fa-whatsapp"></i> Mi Whatsapp</a>
+    </div>
+    
+    
+    
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est illo veritatis mollitia, cum commodi itaque quod numquam, esse consequatur repellendus iste enim ipsam molestias deleniti voluptas quasi quae sed?</p>
 
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, facilis libero. Ab laborum sunt hic officia unde, facere fuga. Numquam incidunt autem tenetur nobis quasi eaque, quo odio tempora itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ex est assumenda vel consequuntur dicta cumque molestiae quisquam ratione, nemo sunt, porro autem cum alias laborum ipsa facere modi expedita!</p>
