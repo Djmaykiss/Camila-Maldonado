@@ -245,7 +245,9 @@ header label{
 .acerca_de .content h3{
     font-size: 2.7rem;
     color: var(--rosadopastel);
-        text-align: center;
+     text-align: center;
+    animation: radiate 1s ease-in-out infinite alternate;
+}
 }
 
 .acerca_de .columna{
