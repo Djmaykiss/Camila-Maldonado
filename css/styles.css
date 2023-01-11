@@ -170,6 +170,17 @@ header label{
     font-size: 4rem;
     color: cornflowerblue;
     text-transform: uppercase;
+    position: relative;
+    animation: radiate 1s ease-in-out infinite alternate;
+}
+
+@keyframes radiate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }
 
 .inicio .content h2 span{
