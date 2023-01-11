@@ -286,7 +286,7 @@ header label{
 .suscribete{
     text-align: center;
     padding: 5rem 1rem;
-    background: url(./imagenes/header.png) no-repeat;
+    background: var(--celestepastel);
     background-size: cover;
     background-position: center;
 }
