@@ -69,6 +69,10 @@ section{
     padding-bottom: 2rem;
 }
 
+section h2{
+    animation: radiate 1s ease-in-out infinite alternate;
+}
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -246,8 +250,6 @@ header label{
     font-size: 2.7rem;
     color: var(--rosadopastel);
      text-align: center;
-    animation: radiate 1s ease-in-out infinite alternate;
-}
 }
 
 .acerca_de .columna{
