@@ -1,0 +1,110 @@
+@media (min-width:1200px) {
+    .footer .caja-contenedor .caja {
+      flex: 1 1 25rem;
+      margin: 5rem 10rem;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  @media (max-width: 990px) {
+    .section {
+      padding: 7.5rem 0rem 2rem 3%; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .fa-bars {
+      visibility: visible;
+      opacity: 1;
+    }
+  
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: white;
+      padding: 1rem 2rem;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      transform-origin: top;
+      transform: scaleY(0);
+      opacity: 0;
+      transition: 0.2s linear;
+    }
+  
+    .navbar a {
+      display: block;
+      margin: 2rem 0;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    input:checked ~ .navbar {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  
+    input:checked ~ label::before {
+      content: "\f00d";
+    }
+  
+    .inicio {
+      flex-flow: column-reverse;
+      padding: 0;
+    }
+  
+    .image img {
+      width: 81%;
+      border: var(--border);
+    }
+  
+    .audifono {
+      padding: 2rem 9%;
+      border: 1px solid red;
+    }
+  
+    .content {
+      padding: 2rem 9%;
+    }
+  
+    .content h3 {
+      font-size: 3.6rem;
+    }
+  
+    .content .p {
+      font-size: 1.5rem;
+    }
+  
+    .acerca {
+      background-position: right;
+    }
+  
+    .suscribete p {
+      width: auto;
+    } 
+  }
+  
+  @media (max-width: 450px) {
+    html {
+      font-size: 49%;
+    }
+    .columna .content .bottons a{
+      width: 100%;
+      text-align: center;
+    }
+  
+    .columna .content .bottons a:last-child{
+      margin: 1rem 0;
+    }
+  
+    .footer .caja-contenedor .caja {
+      flex: 1 1 25rem;
+      margin: 1rem 4rem;
+    }
+  }
