@@ -159,6 +159,27 @@ header label{
     animation: float 3s linear infinite;
 }
 
+.inicio .content h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.inicio .content p{
+    font-size: 2rem;
+    color: var(--gris);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.inicio .content a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-inline: 15rem;
+    text-align: center;
+}
+
 
 
 @keyframes float{
