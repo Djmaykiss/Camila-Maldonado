@@ -39,6 +39,19 @@ body{
     background: whitesmoke;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;background: whitesmoke;
+    box-shadow: rgba(0,0,0,.1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
 header  h1{
     color: var(--celeste);
     font-size: 2.5rem;
@@ -58,9 +71,6 @@ header  h1 span:hover{
     transform: scale(1.1);
     transition: all .3s linear;
 }
-
-
-
 
 section{
     min-height: 100vh;
@@ -149,14 +159,53 @@ header label{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(./imagenes/001.png) no-repeat;
+    background: url(/imagenes/001.png) no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: cover;
 }
 
 .inicio .image img{
     width: 40vh;
     animation: float 3s linear infinite;
+}
+
+
+
+@keyframes float {
+    0%, 100% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(-3.5rem);
+    }
+  }
+
+.inicio .content h2{
+    font-size: 4rem;
+    color: cornflowerblue;
+    text-transform: uppercase;
+    position: relative;
+    animation: radiate 1s ease-in-out infinite alternate;
+}
+
+@keyframes radiate {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+.acerca_de .content h3{
+    text-align: center;
+}
+
+.inicio .content h2 span{
+    color: palevioletred;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .inicio .content h3{
@@ -178,45 +227,6 @@ header label{
     padding: 1.5rem;
     margin-inline: 15rem;
     text-align: center;
-}
-
-
-
-@keyframes float{
-    0% 100%{
-        transform:translateY(0rem);
-    }
-    50%{
-        transform:translateY(-3.5rem);
-    }
-}
-
-.inicio .content h2{
-    font-size: 4rem;
-    color: cornflowerblue;
-    text-transform: uppercase;
-    position: relative;
-    animation: radiate 1s ease-in-out infinite alternate;
-}
-
-@keyframes radiate {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
-}
-
-.inicio .content h2 span{
-    color: palevioletred;
-    text-transform: uppercase;
-}
-
-.inicio .content p{
-    font-size: 2rem;
-    color: var(--gris);
-    padding: 1rem 0;
 }
 
 .detalles .caja-contenedor{
@@ -270,7 +280,6 @@ header label{
 .acerca_de .content h3{
     font-size: 2.7rem;
     color: var(--rosadopastel);
-     text-align: center;
 }
 
 .acerca_de .columna{
