@@ -82,6 +82,7 @@ section{
 
 section h2{
     animation: radiate 1s ease-in-out infinite alternate;
+    text-align: center;
 }
 
 .btn{
